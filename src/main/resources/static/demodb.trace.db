@@ -1,0 +1,18 @@
+2021-09-12 17:50:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('12345678'[*],'HKD','1000000',CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('12345678','HKD','1000000',CURRENT_TIMESTAMP) [42001-200]
+2021-09-12 17:50:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('88888888'[*],'HKD','1000000',CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('88888888','HKD','1000000',CURRENT_TIMESTAMP) [42001-200]
+2021-09-12 17:50:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('12345678'[*],'HKD',1000000, CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('12345678','HKD',1000000, CURRENT_TIMESTAMP) [42001-200]
+2021-09-12 17:50:51 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('88888888'[*],'HKD',1000000,CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('88888888','HKD',1000000,CURRENT_TIMESTAMP) [42001-200]
+2021-09-12 17:50:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('12345678'[*],'HKD',1000000, CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('12345678','HKD',1000000, CURRENT_TIMESTAMP) [42001-200]
+2021-09-12 17:50:54 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO ACCOUNT ('88888888'[*],'HKD',1000000,CURRENT_TIMESTAMP)"; expected "identifier"; SQL statement:
+INSERT INTO ACCOUNT ('88888888','HKD',1000000,CURRENT_TIMESTAMP) [42001-200]

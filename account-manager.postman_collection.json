@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "49023a20-c1bb-4348-84c3-ef708dfefebf",
+		"name": "account-manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Account Balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/accounts/12345678/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"accounts",
+						"12345678",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Money from 12345678 to 88888888",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAcNo\": \"12345678\",\r\n    \"toAcNo\": \"88888888\",\r\n    \"currency\": \"HKD\",\r\n    \"amount\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Money from 88888888 to 12345678",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromAcNo\": \"88888888\",\r\n    \"toAcNo\": \"12345678\",\r\n    \"currency\": \"HKD\",\r\n    \"amount\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
